@@ -1,0 +1,4 @@
+1,newname,author,publisher,pub_date,0,0,0.0
+2,bookname,author,publisher,pub_date,0,0,0.0
+3,bookname,author,publisher,pub_date,0,0,0.0
+4,bookname,author,publisher,pub_date,0,0,0.0
