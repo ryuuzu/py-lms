@@ -5,7 +5,7 @@ def loadbookstocks() -> dict:
     bookid,bookname,author,publisher,pub_date,totalqnty,remaining,price(per 10 days)
 
     Return:
-    bookdb - dict containing bookid as key and other details as value.
+    bookdb - dict - containing bookid as key and other details as value.
     """
 
     # This will be the Python dictionary containing all the book details with their id as its key.
@@ -38,10 +38,10 @@ def savebookstocks(bookdb: dict) -> bool:
     bookid,bookname,author,publisher,pub_date,totalqnty,remaining,price(per 10 days)
 
     Keyword Arguments:
-    bookdb - dict containing bookid as key and other details as value.
+    bookdb - dict - containing bookid as key and other details as value.
 
     Return:
-    True/False - bool depending on the success or failure.
+    True/False - bool - depending on the success or failure.
     """
 
     # Initializing a string that will be written on the bookstocks file.
@@ -60,7 +60,7 @@ def savebookstocks(bookdb: dict) -> bool:
     try:
         with open("./data/bookstocks.txt", "w") as bookstocks:
             bookstocks.write(stringToWrite)
-        # Returns True when everything went smooth
+        # Returns True when everything went smooth.
         return True
     except IOError:
         # Returns False in case of an IOError.
