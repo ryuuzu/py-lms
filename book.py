@@ -1,6 +1,8 @@
 from errors import NoMoreStocks, StockFull
 
 class Book:
+    """
+    """
     def __init__(self, lib_id: str, name: str, author: str, publisher: str, pub_date: str, total: int, price: float, remaining:int=None):
         self.lib_id = lib_id
         self.name = name

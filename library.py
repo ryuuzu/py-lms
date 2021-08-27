@@ -91,22 +91,28 @@ class Library:
         total_borrowing_books = []
         while True:
             while True:
-                bookname = input("Enter the book name: ")
-                book = self.find_book(bookname)
-                if book is not None:
-                    break
-                else:
-                    matching_book = self.find_similar_book(bookname)
-                    if matching_book is None:
-                        print("Please make sure the book name is correct.")
+                while True:
+                    bookname = input("Enter the book name: ")
+                    book = self.find_book(bookname)
+                    if book is not None:
+                        break
                     else:
-                        option = input(
-                            f"Did you mean {matching_book.name}? (Y/N): ").upper()
-                        if option == "Y":
-                            book = matching_book
-                            break
-                        else:
+                        matching_book = self.find_similar_book(bookname)
+                        if matching_book is None:
                             print("Please make sure the book name is correct.")
+                        else:
+                            option = input(
+                                f"Did you mean {matching_book.name}? (Y/N): ").upper()
+                            if option == "Y":
+                                book = matching_book
+                                break
+                            else:
+                                print("Please make sure the book name is correct.")
+                if book in total_borrowing_books:
+                    print(
+                        "The book has already been added to borrow list. Please use a different one.")
+                else:
+                    break
             try:
                 index = self.bookdb.index(book)
                 book.borrow()
@@ -140,7 +146,7 @@ class Library:
         self.print_notes(notes)
         addtonotes(noteid, notes.get_return_notes())
 
-    def get_noteid(self, checkReturned = True):
+    def get_noteid(self, checkReturned=True):
         name = input("Enter the name of the borrower: ")
         noteid = None
         notes_list = searchnotes(
@@ -222,7 +228,7 @@ class Library:
 
     def print_notes(self, notes: Note = None):
         if notes is None:
-            noteid = self.get_noteid(checkReturned = False)
+            noteid = self.get_noteid(checkReturned=False)
             notes = self.create_notes(noteid)
         columns = get_terminal_columns()
         print(f"{self.name}".center(columns))
