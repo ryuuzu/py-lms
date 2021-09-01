@@ -1,0 +1,17 @@
+                                                   Islington Library
+                                                                                                           Sender: admin
+------------------------------------------------------------------------------------------------------------------------
+Invoice
+Receiver: Utsav Magar
+Date: 01 September, 2021
+Return Due: 11 September, 2021
+Returned Date: 01 September, 2021
+         -----------------------------------------------------------------------------------------------------          
+         |Book ID    | Book Name                                          | Author               | Price     |          
+         |HP.002     | Harry Potter and the Chamber of Secrets            | J.K. Rowling         | 15.0      |          
+         |           |                                                    | Fine                 | 0         |          
+         |           |                                                    | Total                | 15.0      |          
+         -----------------------------------------------------------------------------------------------------          
+------------------------------------------------------------------------------------------------------------------------
+Kindly return the book before or at the due date.
+Note: You will be fined Rs.10 per day for late return.

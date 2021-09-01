@@ -1,3 +1,6 @@
+"""
+Custom Errors for certain cases.
+"""
 class BookError(Exception):
     pass
 

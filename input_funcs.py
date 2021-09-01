@@ -3,6 +3,9 @@ from extras import get_terminal_columns
 
 
 def get_login_menu():
+    """
+    Displays the login menu and doesn't let the user pass unless valid credentials are used.
+    """
     # Printing a line break
     print("\n")
     columns = get_terminal_columns()  # Getting the coloumns of the terminal
@@ -37,6 +40,9 @@ def get_login_menu():
 
 
 def get_main_menu():
+    """
+    Displays the main menu with the options.
+    This doesn't let the user pass unless valid option is used"""
     # Text to diplay in the main menu.
     main_menu_text = """
 Options:
@@ -54,12 +60,12 @@ Options:
     # Printing the text.
     print(main_menu_text)
     # A list of all valid options
-    option_list = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "exit"]
+    valid_options_list = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "exit"]
     # A infinite loop for getting correct input
     while True:
         # Asking the user to enter an option
         option = input("Enter an option to start the task: ").lower()
-        if option in option_list:  # A check if the input is valid
+        if option in valid_options_list:  # A check if the input is valid
             return option  # Returning the user's input
         else:
             # An error message in case the input isn't valid
@@ -67,6 +73,10 @@ Options:
             continue
 
 def get_book_details_input():
+    """
+    Takes input from the user for book details.
+    Has its own checks for proper datatype usage.
+    """
     # Taking user input
     bookname = input("Enter the book's name: ")
     author = input("Enter the book's author name: ")
@@ -86,7 +96,7 @@ def get_book_details_input():
     while True:
         total_str = input("Enter the book's total stock: ")
         try:
-            total = float(total_str)
+            total = int(total_str)
             break  # Breaks after successfully parsing the string to float.
         except ValueError:
             # Loops around if it is wrong.

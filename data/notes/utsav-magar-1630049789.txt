@@ -1,3 +1,0 @@
-BORROW:Utsav Magar,Harry Potter and the Philosopher's Stone,2021-08-27T13:21:54.082304,2021-09-06T13:21:54.082304,10.0
-BORROW:Utsav Magar,Harry Potter and the Chamber of Secrets,2021-08-27T13:21:54.082304,2021-09-06T13:21:54.082304,15.0
-RETURN:Utsav Magar,2021-08-27T13:22:38.771463,0,25.0

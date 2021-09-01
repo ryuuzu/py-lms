@@ -2,13 +2,17 @@ from book import Book
 
 
 def loadbookstocks() -> dict:
-    """Returns the books stocks details as list.
+    """
+    Returns the books stocks details as list.
 
     Book details format:
+    --------------------
     bookid,bookname,author,publisher,pub_date,totalqnty,remaining,price(per 10 days)
 
-    Return:
-    bookdb - list - contains book objects containing the book details.
+    Returns:
+    --------
+    bookdb : list
+        contains book objects containing the book details.
     """
 
     # This will be the Python dictionary containing all the book details with their id as its key.
@@ -34,16 +38,22 @@ def loadbookstocks() -> dict:
 
 
 def savebookstocks(bookdb: list) -> bool:
-    """Returns True when saving is complete.
+    """
+    Returns True when saving is complete.
 
     Book details format:
+    --------------------
     bookid,bookname,author,publisher,pub_date,totalqnty,remaining,price(per 10 days)
 
-    Keyword Arguments:
-    bookdb - list - contains book objects containing the book details.
+    Parameters:
+    -----------
+    bookdb : list
+        contains book objects containing the book details.
 
-    Return:
-    True/False - bool - depending on the success or failure.
+    Returns:
+    --------
+    True/False : bool
+        bool value depending on the success or failure.
     """
 
     # A list comprehension to get all the details for saving.
