@@ -378,7 +378,7 @@ class Library:
         for note_line in note_lines:
             if note_line.startswith("BORROW:"):
                 # Getting borrow values from the line accordingly.
-                note_line = note_line.strip("BORROW:")
+                note_line = note_line[7:]
                 note_args = note_line.split(",")
                 name = note_args[0]
                 bookname = note_args[1]
@@ -387,7 +387,7 @@ class Library:
                 books.append(book)
             elif note_line.startswith("RETURN:"):
                 # Getting return values from the line accordingly
-                note_line = note_line.strip("RETURN:")
+                note_line = note_line[8:]
                 note_args = note_line.split(",")
                 returned = True
                 returneddate = datetime.fromisoformat(note_args[1])
@@ -414,8 +414,10 @@ class Library:
         """
         columns = 120
         note_text = ""
-        note_text += f"{self.name}\n".center(columns)
-        note_text += f"Sender: {self.user}\n".rjust(70)
+        note_text += f"{self.name}".center(columns)
+        note_text += "\n"
+        note_text += f"Sender: {self.user}".rjust(columns)
+        note_text += "\n"
         note_text += f"{''.join(['-' for x in range(columns)])}\n"
         note_text += "Invoice\n"
         note_text += f"Receiver: {notes.name}\n"
@@ -431,7 +433,7 @@ class Library:
         for book in notes.books:
             note_text += f"|{book.lib_id:<10} | {book.name:<50} | {book.author:<20} | {book.price:<10}|".center(
                 columns)
-        note_text += "\n"
+            note_text += "\n"
         if notes.returned:
             note_text += f"|{'':<10} | {'':<50} | {'Fine':<20} | {notes.fine:<10}|".center(
                 columns)

@@ -86,7 +86,7 @@ class Book:
         """
         Marks the book as returned i.e. adds one to the remaining stock value.
         """
-        if self.remaining <= self.total:
+        if self.remaining < self.total:
             self.remaining += 1
         else:
             raise StockFull(self.remaining, "Stock Already Full.")

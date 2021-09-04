@@ -111,6 +111,10 @@ class Note:
     def get_return_notes(self):
         """
         Returns the borrow notes to be written in data file.
+
+        Returns:
+        --------
+        
         """
         if self.returned:
             return f"RETURN:{self.name},{self.returneddate.isoformat()},{self.late_days},{self.final_cost}"

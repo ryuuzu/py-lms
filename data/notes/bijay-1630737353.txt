@@ -1,0 +1,18 @@
+                                                   Islington Library                                                    
+                                                                                                           Sender: admin
+------------------------------------------------------------------------------------------------------------------------
+Invoice
+Receiver: Bijay
+Date: 04 September, 2021
+Return Due: 14 September, 2021
+Returned Date: 04 September, 2021
+         -----------------------------------------------------------------------------------------------------          
+         |Book ID    | Book Name                                          | Author               | Price     |          
+         |HP.001     | Harry Potter and the Philosopher's Stone           | J.K. Rowling         | 10.0      |          
+         |HP.002     | Harry Potter and the Chamber of Secrets            | J.K. Rowling         | 15.0      |          
+         |           |                                                    | Fine                 | 0         |          
+         |           |                                                    | Total                | 25.0      |          
+         -----------------------------------------------------------------------------------------------------          
+------------------------------------------------------------------------------------------------------------------------
+Kindly return the book before or at the due date.
+Note: You will be fined Rs.10 per day for late return.

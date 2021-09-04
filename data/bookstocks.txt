@@ -1,4 +1,4 @@
 HP.001,Harry Potter and the Philosopher's Stone,J.K. Rowling,Penguin,1997,50,49,10.0
-HP.002,Harry Potter and the Chamber of Secrets,J.K. Rowling,Bloomsbury Publishing,1998,25,25,15.0
+HP.002,Harry Potter and the Chamber of Secrets,J.K. Rowling,Bloomsbury Publishing,1998,25,24,15.0
 HP.003,Harry Potter and the Prisoner of Azkaban,J.K. Rowling ,Bloomsbury Publishing,1999,30,30,20.0
 HP.004,Harry Potter and the Goblet of Fire,J.K. Rowling,Bloomsbury Publishing,2000,28,27,25.0
